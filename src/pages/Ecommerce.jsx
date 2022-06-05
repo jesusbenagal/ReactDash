@@ -5,7 +5,7 @@ import { GoPrimitiveDot } from "react-icons/go";
 import { Stacked, Pie, Button, SparkLine } from "../components";
 import {
   earningData,
-  SparkLineAreaDatas,
+  SparklineAreaData,
   ecomPieChartData,
 } from "../data/dummy";
 import { useStateContext } from "../context/ContextProvider";
@@ -90,6 +90,17 @@ const Ecommerce = () => {
                   <span className="text-3xl font-semibold">$48,438</span>
                 </p>
                 <p className="text-gray-500 mt-1">Expense</p>
+              </div>
+              <div className="mt-5">
+                <SparkLine
+                  currentColor="blue"
+                  id="line-sparkline"
+                  type="Line"
+                  height="80px"
+                  widht="250px"
+                  data={SparklineAreaData}
+                  color="blue"
+                />
               </div>
             </div>
           </div>
