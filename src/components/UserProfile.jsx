@@ -3,7 +3,7 @@ import { MdOutlineCancel } from "react-icons/md";
 
 import { Button } from ".";
 import { userProfileData } from "../data/dummy";
-import { useStateContext } from "../context/ContextProvider";
+import { useStateContext } from "../contexts/ContextProvider";
 import avatar from "../data/avatar.jpg";
 
 const UserProfile = () => {
@@ -38,7 +38,7 @@ const UserProfile = () => {
           </p>
           <p className="text-gray-500 text-sm font-semibold dark:text-gray-400">
             {" "}
-            correo@correo.com{" "}
+            info@shop.com{" "}
           </p>
         </div>
       </div>
